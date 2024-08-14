@@ -1,0 +1,2 @@
+abb_experimental/abb_experimental:abb_experimental/abb_irb1200_5_90_moveit_config:abb_experimental/abb_irb1200_gazebo:abb_experimental/abb_irb1200_support:abb_experimental/abb_resources:abb_pkgs/abb1200_gazebo:abb_pkgs/abb1200_master:abb_pkgs/abb1200_moveit:abb_pkgs/abb_irb1200_description
+-DCATKIN_DEVEL_PREFIX=/home/gaby/Documentos/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/gaby/Documentos/catkin_ws/install -G Unix Makefiles

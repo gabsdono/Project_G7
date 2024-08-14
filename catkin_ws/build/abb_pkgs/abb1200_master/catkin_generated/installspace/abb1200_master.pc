@@ -1,0 +1,8 @@
+prefix=/home/gaby/Documentos/catkin_ws/install
+
+Name: abb1200_master
+Description: Description of abb1200_master
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

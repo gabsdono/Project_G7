@@ -1,0 +1,8 @@
+prefix=/home/gaby/Documentos/catkin_ws/devel
+
+Name: abb1200_moveit
+Description: Description of abb1200_moveit
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
