@@ -38,17 +38,26 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb1200_description.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb_irb1200_description.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb1200_description/cmake" TYPE FILE FILES
-    "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb1200_descriptionConfig.cmake"
-    "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb1200_descriptionConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_description/cmake" TYPE FILE FILES
+    "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb_irb1200_descriptionConfig.cmake"
+    "/home/gaby/Documentos/catkin_ws/build/abb_pkgs/abb_irb1200_description/catkin_generated/installspace/abb_irb1200_descriptionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb1200_description" TYPE FILE FILES "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_description" TYPE FILE FILES "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/abb_irb1200_description" TYPE DIRECTORY FILES
+    "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/config"
+    "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/launch"
+    "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/meshes"
+    "/home/gaby/Documentos/catkin_ws/src/abb_pkgs/abb_irb1200_description/urdf"
+    )
 endif()
 

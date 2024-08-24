@@ -8,4 +8,7 @@
   <rosparam file="$(find abb1200_gazebo)/config/irb1200_arm_controller.yaml" command="load" />
   <node name="abb_irb1200_controller_spawner" pkg="controller_manager" type="controller_manager" args="spawn arm_controller" />
 
+  <!-- load the gripper controller -->
+  <rosparam file="$(find abb1200_gazebo)/config/gripper_controller_robotiq.yaml"/>
+  <node name="Gripper_Spawner" pkg="controller_manager" type="spawner" args="gripper"/>
 </launch>

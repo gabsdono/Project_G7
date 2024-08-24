@@ -1,0 +1,8 @@
+prefix=/home/gaby/Documentos/catkin_ws/devel
+
+Name: abb_irb1200_description
+Description: Description of abb_irb1200_description
+Version: 1.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

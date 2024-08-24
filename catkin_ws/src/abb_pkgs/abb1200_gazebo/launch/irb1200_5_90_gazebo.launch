@@ -6,9 +6,9 @@
   <remap from="/arm_controller/state" to="/feedback_states" />
   <remap from="/arm_controller/command" to="/joint_path_command"/>
 
-  <!-- start simulated world -->
+  <!-- start simulated world with your custom world file -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="worlds/empty.world"/>
+    <arg name="world_name" value="$(find abb1200_gazebo)/worlds/world.world"/>
     <arg name="gui" value="true"/>
     <arg name="paused" value="$(arg paused)"/>
   </include>
