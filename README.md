@@ -8,11 +8,36 @@ Para ejecutar el avance:
 
 ### PARA EL GAZEBO
 
-cd ~/catkin_ws/src/abb_pkgs/abb1200_master/src$ roslaunch abb1200_gazebo irb1200_5_90_gazebo.launch
+cd ~/catkin_ws/src/abb_pkgs/abb1200_master/src
 
-### PARA EL CODIGO DE PYTHON
+roslaunch abb1200_gazebo irb1200_5_90_gazebo.launch
 
-cd ~/catkin_ws/src/abb_pkgs/abb1200_master/src$ rosrun abb1200_master jtc_node.py 1.0 -0.5 0.5 1.0 -1.0 0.5
+### PARA EL CODIGO DE PYTHON EJECUTAR LAS SIGUIENTES LINEAS
 
-(siendo 1.0 -0.5 0.5 1.0 -1.0 0.5 una posición aleatoria)
+cd ~/catkin_ws/src/abb_pkgs/abb1200_master/src
 
+rosrun abb1200_master jtc_node.py 1.0 -0.5 0.5 1.0 -1.0 0.5
+
+rosrun abb1200_master jtc_node.py 0.02 0.60 -0.5 0 1.5 0
+
+rosrun abb1200_master jtc_node.py 0.02 0.65 -0.5 0 1.5 0
+
+rostopic pub /gripper/gripper_cmd/goal [Tab][Tab] #gripper agarra con position 0.2
+
+rosrun abb1200_master jtc_node.py 0.02 0.50 -0.5 0 1.5 0
+
+rosrun abb1200_master jtc_node.py 0.02 0.1 0.3 0 0 0
+
+rosrun abb1200_master jtc_node.py 2.4 0.1 0.3 0 0 0
+
+rosrun abb1200_master jtc_node.py 2.6 0.4 0.3 0 -0.8 0
+
+rosrun abb1200_master jtc_node.py 2.8 0.4 0.4 0 -0.8 0
+
+rostopic pub /gripper/gripper_cmd/goal [Tab][Tab] #gripper agarra con position 0.0
+
+rosrun abb1200_master jtc_node.py 2.8 0.3 0.4 0 -0.8 0
+
+rosrun abb1200_master jtc_node.py 0 0.3 0.4 0 -0.8 0
+
+rosrun abb1200_master jtc_node.py 0.02 0.60 -0.5 0 1.5 0
